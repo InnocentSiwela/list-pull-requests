@@ -43,7 +43,7 @@ function setOutput(pull) {
         var p = pull_1[_i];
         //output = output + p.title + "\\n" + p.html_url + "\\n---\\n";
         //changing the return results
-        output = output + p.title + "\\n"
+        output = output + p.title + "\\n---\\n";
     }
     output = output.slice(0, -7); //最後の"\\n---\\n"を削除
     core.setOutput('pulls', output);
